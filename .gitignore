@@ -1,3 +1,4 @@
-TTNet/Trained_Models/Phase1/*
-TTNet/Trained_Models/Phase2/*
-TTNet/Trained_Models/Phase3/*
+TTNet/Trained_Models/*
+TTNet/Dataset/*
+TTNet/Results/TTNet_Results/Predictions/*
+.python-version
