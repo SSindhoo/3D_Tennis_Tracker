@@ -2,3 +2,4 @@ TTNet/Trained_Models/*
 TTNet/Dataset/*
 TTNet/Results/TTNet_Results/Predictions/*
 .python-version
+TTNet/Results/TTNet_Results/videos/*
