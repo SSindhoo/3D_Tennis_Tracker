@@ -3,3 +3,5 @@ TTNet/Dataset/*
 TTNet/Results/TTNet_Results/Predictions/*
 .python-version
 TTNet/Results/TTNet_Results/videos/*
+TTNet/tmp/*
+TTNet/Results/TTNet_Results/out.mp4
