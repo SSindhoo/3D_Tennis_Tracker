@@ -1,26 +1,29 @@
 # Ball labeller using Re3 Tracker
 
-This repository is based on the official implementation of [Re3: Real-Time Recurrent Regression Networks for Visual Tracking of Generic Objects](https://danielgordon10.github.io/pdfs/re3.pdf).
-
-## Training the tracker on tennis images
-The following fils are needed for training the tracker:
-1. [training/datasets/tennis/imgs](training/datasets/tennis/imgs) - the RGB images for training (.png)
-2. [training/datasets/tennis/labels/train/labels.npy](training/datasets/tennis/labels/train/labels.npy) - the labels for the images 
-3. [training/datasets/tennis/labels/train/image_names.txt](training/datasets/tennis/labels/train/image_names.txt) - the names of the images
-4. (optional) [logs/checkpoints/iteration_0003500.pt](logs/checkpoints/iteration_0003500.pt) - the pretrained model
-
-To train the model simply run: `python3 training/unrolled_solver.py -rtc -n 2 -b 64`
+This is an implementation of [Re3: Real-Time Recurrent Regression Networks for Visual Tracking of Generic Objects](https://danielgordon10.github.io/pdfs/re3.pdf) expanding on an [implementation by the project supvervisor](https://github.com/r0nn13/ball-labeller) Dr Ronald Clark.
 
 ## Labelling new images using the tracker
-The images to be labelled should be place in the following directories:
-1. [demo/data/imgs](demo/data/imgs) - the images should be in .png / jpg format
+The images to be labelled should be place in [demo/data/imgs](demo/data/imgs) and should be in .png / jpg format.
 
-Run `python3 demo/image_demo.py`
+Run `python3 demo/app.py`
 
-<img src="/demo/tennis_demo.png" height="300"/>
+<img src="/demo/labeller.png" height="300"/>
 
-**left click** - mark ball at clicked location,
-**middle click** - remove ball from frame,
-**spacebar** - go to next frame 
+### Annotation
+* **left click** - mark ball at clicked location
+* **middle click** - remove annotation from current frame
 
-After finishing all frames in the video, a `locations.txt` file will be created storing the ball bounding box for each frame.
+### Navigation
+* **d** - go to next frame 
+* **a** - go to previous frame
+* **esc** - exit labeller
+
+### Event selection
+* **1** select Nothing event
+* **2** select Ball event
+* **3** select Bounce event
+* **4** select Racket Contact event
+* **5** select Net Contact event
+* **6** select Serve event
+
+After labelling all images or exiting the labeller, a `annotations.txt` file will be created storing the bounding box for each frame.
