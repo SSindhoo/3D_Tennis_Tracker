@@ -1,14 +1,16 @@
-TTNet/Trained_Models/*
-TTNet/Dataset/*
-TTNet/Results/TTNet_Results/Predictions/*
 .python-version
-TTNet/Results/TTNet_Results/videos/*
-TTNet/tmp/*
-TTNet/Results/TTNet_Results/out.mp4
+*.pyc
 
-TrackNet/Dataset_old/*
+TTNet/Dataset/*
+TTNet/Trained_Models/*
+TTNet/Results/*
+TTNet/tmp/*
+
 TrackNet/Dataset/*
 TrackNet/Trained_Models/*
 TrackNet/Results/*
 TrackNet/tmp/*
 TrackNet/Videos/*
+
+Labeller/demo/data/*
+Labeller/demo/annotations.txt
