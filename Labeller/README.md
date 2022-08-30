@@ -7,7 +7,7 @@ The images to be labelled should be place in [demo/data/imgs](demo/data/imgs) an
 
 Run `python3 demo/app.py`
 
-<img src="/demo/labeller.png" height="300"/>
+<img src="/Labeller/labeller.png" height="300"/>
 
 ### Annotation
 * **left click** - mark ball at clicked location
